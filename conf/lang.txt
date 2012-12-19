@@ -1,0 +1,10 @@
+;remove_comment.lit
+$.lit
+dot3.lit
+keyword.lit
+class.lit
+esolang.lit
+;lambda.lit
+makehash.lit
+makeindent.lit
+data.lit

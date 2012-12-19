@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=GBK" http-equiv="Content-Type" />
+
+  <title>Module: Seiran20</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="module">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./s20_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="s20.rb">s20.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+
+      
+
+      
+      <!-- Namespace Contents -->
+      <div id="namespace-list-section" class="section">
+        <h3 class="section-header">Namespace</h3>
+        <ul class="link-list">
+          
+          <li><span class="type">CLASS</span> <a href="Seiran20/Intern_Class.html">Seiran20::Intern_Class</a></li>
+          
+          <li><span class="type">CLASS</span> <a href="Seiran20/Intern_Class_Class.html">Seiran20::Intern_Class_Class</a></li>
+          
+          <li><span class="type">CLASS</span> <a href="Seiran20/Internal_Callback.html">Seiran20::Internal_Callback</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-addrof">#addrof</a></li>
+          
+          <li><a href="#method-i-alloc">#alloc</a></li>
+          
+          <li><a href="#method-i-allocmovable">#allocmovable</a></li>
+          
+          <li><a href="#method-i-api">#api</a></li>
+          
+          <li><a href="#method-i-callback">#callback</a></li>
+          
+          <li><a href="#method-i-callproc">#callproc</a></li>
+          
+          <li><a href="#method-i-capi">#capi</a></li>
+          
+          <li><a href="#method-i-clipformats">#clipformats</a></li>
+          
+          <li><a href="#method-i-copy">#copy</a></li>
+          
+          <li><a href="#method-i-findRGSS">#findRGSS</a></li>
+          
+          <li><a href="#method-i-findcall">#findcall</a></li>
+          
+          <li><a href="#method-i-free">#free</a></li>
+          
+          <li><a href="#method-i-funcaddr">#funcaddr</a></li>
+          
+          <li><a href="#method-i-hwnd">#hwnd</a></li>
+          
+          <li><a href="#method-i-lm">#lm</a></li>
+          
+          <li><a href="#method-i-loadmodule">#loadmodule</a></li>
+          
+          <li><a href="#method-i-lock">#lock</a></li>
+          
+          <li><a href="#method-i-mem_readint">#mem_readint</a></li>
+          
+          <li><a href="#method-i-mem_writeint">#mem_writeint</a></li>
+          
+          <li><a href="#method-i-peldr">#peldr</a></li>
+          
+          <li><a href="#method-i-read_cbtext">#read_cbtext</a></li>
+          
+          <li><a href="#method-i-read_editordata">#read_editordata</a></li>
+          
+          <li><a href="#method-i-readmem">#readmem</a></li>
+          
+          <li><a href="#method-i-readmodule">#readmodule</a></li>
+          
+          <li><a href="#method-i-readstr">#readstr</a></li>
+          
+          <li><a href="#method-i-readwstr">#readwstr</a></li>
+          
+          <li><a href="#method-i-rgssx_increment">#rgssx_increment</a></li>
+          
+          <li><a href="#method-i-thiscall">#thiscall</a></li>
+          
+          <li><a href="#method-i-to_mb">#to_mb</a></li>
+          
+          <li><a href="#method-i-to_wc">#to_wc</a></li>
+          
+          <li><a href="#method-i-unlock">#unlock</a></li>
+          
+          <li><a href="#method-i-urlread">#urlread</a></li>
+          
+          <li><a href="#method-i-writemem">#writemem</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./conf/lang_txt.html">lang.txt</a></li>
+        
+          <li class="file"><a href="./license/vorbis-tools/LICENSE.html">LICENSE</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./FModEx.html">FModEx</a></li>
+        
+          <li><a href="./FModEx/Channel.html">FModEx::Channel</a></li>
+        
+          <li><a href="./FModEx/DLL.html">FModEx::DLL</a></li>
+        
+          <li><a href="./FModEx/Sound.html">FModEx::Sound</a></li>
+        
+          <li><a href="./FModEx/System.html">FModEx::System</a></li>
+        
+          <li><a href="./Lang.html">Lang</a></li>
+        
+          <li><a href="./Lang/Lang.html">Lang::Lang</a></li>
+        
+          <li><a href="./Lang/Lang/Lang.html">Lang::Lang::Lang</a></li>
+        
+          <li><a href="./Lang/Lang/Lang/Opt.html">Lang::Lang::Lang::Opt</a></li>
+        
+          <li><a href="./Seiran20.html">Seiran20</a></li>
+        
+          <li><a href="./Seiran20/Intern_Class.html">Seiran20::Intern_Class</a></li>
+        
+          <li><a href="./Seiran20/Intern_Class_Class.html">Seiran20::Intern_Class_Class</a></li>
+        
+          <li><a href="./Seiran20/Internal_Callback.html">Seiran20::Internal_Callback</a></li>
+        
+          <li><a href="./ERB.html">ERB</a></li>
+        
+          <li><a href="./ERB/DefMethod.html">ERB::DefMethod</a></li>
+        
+          <li><a href="./ERB/Util.html">ERB::Util</a></li>
+        
+          <li><a href="./ExtRuby.html">ExtRuby</a></li>
+        
+          <li><a href="./ExtRuby/Object.html">ExtRuby::Object</a></li>
+        
+          <li><a href="./ExtRuby/Toplevel_Object.html">ExtRuby::Toplevel_Object</a></li>
+        
+          <li><a href="./Roost.html">Roost</a></li>
+        
+          <li><a href="./Roost/Dynamic.html">Roost::Dynamic</a></li>
+        
+          <li><a href="./Roost/Dynamic/Dyn.html">Roost::Dynamic::Dyn</a></li>
+        
+          <li><a href="./FMod.html">FMod</a></li>
+        
+          <li><a href="./FMod/SoundFile.html">FMod::SoundFile</a></li>
+        
+          <li><a href="./UDP.html">UDP</a></li>
+        
+          <li><a href="./UDP/EndPoint.html">UDP::EndPoint</a></li>
+        
+          <li><a href="./Archive.html">Archive</a></li>
+        
+          <li><a href="./Audio.html">Audio</a></li>
+        
+          <li><a href="./ExternalWrapper.html">ExternalWrapper</a></li>
+        
+          <li><a href="./Hash.html">Hash</a></li>
+        
+          <li><a href="./Integer.html">Integer</a></li>
+        
+          <li><a href="./LibVF.html">LibVF</a></li>
+        
+          <li><a href="./Libpng.html">Libpng</a></li>
+        
+          <li><a href="./Metasm.html">Metasm</a></li>
+        
+          <li><a href="./OS.html">OS</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./OpenGL.html">OpenGL</a></li>
+        
+          <li><a href="./Python.html">Python</a></li>
+        
+          <li><a href="./ScanError.html">ScanError</a></li>
+        
+          <li><a href="./SimplePipe.html">SimplePipe</a></li>
+        
+          <li><a href="./String.html">String</a></li>
+        
+          <li><a href="./StringScanner.html">StringScanner</a></li>
+        
+          <li><a href="./Target.html">Target</a></li>
+        
+          <li><a href="./TestShow.html">TestShow</a></li>
+        
+          <li><a href="./UI.html">UI</a></li>
+        
+          <li><a href="./VER.html">VER</a></li>
+        
+          <li><a href="./Which.html">Which</a></li>
+        
+          <li><a href="./WinSock2Constants.html">WinSock2Constants</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="module">Seiran20</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="ASCIICHAR">ASCIICHAR</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="FNS">FNS</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="GPA">GPA</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="ID_CALL">ID_CALL</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="LL">LL</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="MEM">MEM</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="MODULES">MODULES</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="RGSS">RGSS</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="RGSSX">RGSSX</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="SL">SL</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="SendMsg">SendMsg</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="WSL">WSL</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="addrof-method" class="method-detail ">
+          <a name="method-i-addrof"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">addrof</span><span
+              class="method-args">(handle, name)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="addrof-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 205</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">addrof</span>(<span class="ruby-identifier">handle</span>, <span class="ruby-identifier">name</span>) ; <span class="ruby-constant">GPA</span>.<span class="ruby-identifier">call</span>(<span class="ruby-constant">LL</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">handle</span>), <span class="ruby-identifier">name</span>); <span class="ruby-keyword">end</span></pre>
+            </div><!-- addrof-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- addrof-method -->
+
+      
+        <div id="alloc-method" class="method-detail ">
+          <a name="method-i-alloc"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">alloc</span><span
+              class="method-args">(num)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="alloc-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 200</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">alloc</span>(<span class="ruby-identifier">num</span>) <span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>, <span class="ruby-string">'GlobalAlloc'</span>).<span class="ruby-identifier">call</span> <span class="ruby-value">0</span>, <span class="ruby-identifier">num</span> <span class="ruby-keyword">end</span></pre>
+            </div><!-- alloc-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- alloc-method -->
+
+      
+        <div id="allocmovable-method" class="method-detail ">
+          <a name="method-i-allocmovable"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">allocmovable</span><span
+              class="method-args">(num)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="allocmovable-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 199</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">allocmovable</span>(<span class="ruby-identifier">num</span>) <span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>, <span class="ruby-string">'GlobalAlloc'</span>).<span class="ruby-identifier">call</span> <span class="ruby-value">0x2000</span>, <span class="ruby-identifier">num</span> <span class="ruby-keyword">end</span></pre>
+            </div><!-- allocmovable-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- allocmovable-method -->
+
+      
+        <div id="api-method" class="method-detail ">
+          <a name="method-i-api"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">api</span><span
+              class="method-args">(dll,func)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="api-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">api</span>(<span class="ruby-identifier">dll</span>,<span class="ruby-identifier">func</span>)
+  <span class="ruby-identifier">lambda</span>{<span class="ruby-operator">|</span>*<span class="ruby-identifier">args</span><span class="ruby-operator">|</span>
+     <span class="ruby-constant">Win32API</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">dll</span>,<span class="ruby-identifier">func</span>,<span class="ruby-identifier">args</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span><span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_param</span>}, <span class="ruby-string">'i'</span>).<span class="ruby-identifier">call</span> *<span class="ruby-identifier">args</span>
+  }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- api-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- api-method -->
+
+      
+        <div id="callback-method" class="method-detail ">
+          <a name="method-i-callback"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">callback</span><span
+              class="method-args">(type = :stdcall, &block)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="callback-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 121</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">callback</span>(<span class="ruby-identifier">type</span> = <span class="ruby-value">:stdcall</span>, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-identifier">stdcall</span> = <span class="ruby-identifier">type</span> <span class="ruby-operator">==</span> <span class="ruby-value">:stdcall</span>
+  <span class="ruby-identifier">x</span> = <span class="ruby-constant">Internal_Callback</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">ar</span> = <span class="ruby-identifier">block</span>.<span class="ruby-identifier">arity</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">ar</span> <span class="ruby-operator">!=</span> <span class="ruby-value">-1</span>
+    <span class="ruby-identifier">x</span>.<span class="ruby-identifier">block</span> = <span class="ruby-identifier">lambda</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">ebp</span><span class="ruby-operator">|</span><span class="ruby-identifier">block</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">ebp</span><span class="ruby-operator">+</span><span class="ruby-value">8</span>, <span class="ruby-identifier">ar</span>*<span class="ruby-value">4</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L*'</span>)}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">x</span>.<span class="ruby-identifier">block</span> = <span class="ruby-identifier">block</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">x</span>.<span class="ruby-identifier">code</span>  = [<span class="ruby-value">0x55e58955</span>, <span class="ruby-value">0x40e0d158</span>, <span class="ruby-value">0x50</span>,
+             <span class="ruby-value">0x68</span>, <span class="ruby-value">0x00000001</span>, 
+             <span class="ruby-value">0x68</span>, <span class="ruby-constant">ID_CALL</span>, 
+             <span class="ruby-value">0x68</span>, <span class="ruby-identifier">x</span>.<span class="ruby-identifier">block</span>.<span class="ruby-identifier">object_id</span>*<span class="ruby-value">2</span>, 
+             <span class="ruby-value">0xb8</span>, <span class="ruby-constant">RGSSX</span>[<span class="ruby-value">2</span>],
+             <span class="ruby-value">0xc481d0ff</span>,  <span class="ruby-value">0x00000010</span>,
+             <span class="ruby-value">0xc2c9f8d1</span>, <span class="ruby-identifier">stdcall</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">ar</span> * <span class="ruby-value">4</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span> ].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'LLCCLCLCLCLLLLS'</span>)
+  <span class="ruby-identifier">x</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- callback-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- callback-method -->
+
+      
+        <div id="callproc-method" class="method-detail ">
+          <a name="method-i-callproc"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">callproc</span><span
+              class="method-args">(addr, type = :cdecl)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="callproc-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">callproc</span>(<span class="ruby-identifier">addr</span>, <span class="ruby-identifier">type</span> = <span class="ruby-value">:cdecl</span>)
+  <span class="ruby-identifier">stdcall</span> = <span class="ruby-identifier">type</span> <span class="ruby-operator">==</span> <span class="ruby-value">:stdcall</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;addr == 0 &quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">addr</span>.<span class="ruby-identifier">to_ptr</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">apicall</span> = <span class="ruby-identifier">api</span>(<span class="ruby-string">'user32'</span>, <span class="ruby-string">'CallWindowProcW'</span>)
+  <span class="ruby-identifier">lambda</span>{<span class="ruby-operator">|</span>*<span class="ruby-identifier">args</span><span class="ruby-operator">|</span><span class="ruby-identifier">apicall</span>.<span class="ruby-identifier">call</span>((<span class="ruby-identifier">code</span>=[<span class="ruby-value">0x55</span>,<span class="ruby-value">0xe589</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CS'</span>)<span class="ruby-operator">+</span><span class="ruby-identifier">args</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> [<span class="ruby-value">0x68</span>, <span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_ptr</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CL'</span>)}.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span><span class="ruby-operator">+</span>[<span class="ruby-value">0xb8</span>, <span class="ruby-identifier">addr</span>.<span class="ruby-identifier">to_ptr</span>, <span class="ruby-value">0xD0FF</span>, <span class="ruby-value">0xc481</span>, (<span class="ruby-identifier">stdcall</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span>*<span class="ruby-value">4</span>) , <span class="ruby-value">0x10c2c9</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CLSSLL'</span>)),<span class="ruby-value">0</span>,<span class="ruby-value">0</span>,<span class="ruby-value">0</span>,<span class="ruby-value">0</span>)}
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- callproc-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- callproc-method -->
+
+      
+        <div id="capi-method" class="method-detail ">
+          <a name="method-i-capi"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">capi</span><span
+              class="method-args">(dll, func)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="capi-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">capi</span>(<span class="ruby-identifier">dll</span>, <span class="ruby-identifier">func</span>)
+   <span class="ruby-identifier">callproc</span>(<span class="ruby-constant">GPA</span>.<span class="ruby-identifier">call</span>(<span class="ruby-constant">LL</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">dll</span>), <span class="ruby-identifier">func</span>))
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- capi-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- capi-method -->
+
+      
+        <div id="clipformats-method" class="method-detail ">
+          <a name="method-i-clipformats"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">clipformats</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="clipformats-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 308</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">clipformats</span>
+  <span class="ruby-identifier">a</span>, <span class="ruby-identifier">r</span>, <span class="ruby-identifier">ecf</span> = [], <span class="ruby-value">0</span>, <span class="ruby-identifier">api</span>(<span class="ruby-string">'User32'</span>, <span class="ruby-string">'EnumClipboardFormats'</span>)
+  <span class="ruby-identifier">loop</span> <span class="ruby-keyword">do</span>
+     <span class="ruby-identifier">r</span> = <span class="ruby-identifier">ecf</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">r</span>)
+     <span class="ruby-keyword">if</span> <span class="ruby-identifier">r</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+       <span class="ruby-identifier">a</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">r</span>)
+     <span class="ruby-keyword">else</span>
+       <span class="ruby-keyword">break</span>
+     <span class="ruby-keyword">end</span>
+   <span class="ruby-keyword">end</span>
+   <span class="ruby-identifier">a</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- clipformats-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- clipformats-method -->
+
+      
+        <div id="copy-method" class="method-detail ">
+          <a name="method-i-copy"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">copy</span><span
+              class="method-args">(addr1, addr2, num)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="copy-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 202</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">copy</span>(<span class="ruby-identifier">addr1</span>, <span class="ruby-identifier">addr2</span>, <span class="ruby-identifier">num</span>)  <span class="ruby-constant">MEM</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">addr1</span>, <span class="ruby-identifier">addr2</span>, <span class="ruby-identifier">num</span> <span class="ruby-keyword">end</span></pre>
+            </div><!-- copy-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- copy-method -->
+
+      
+        <div id="findRGSS-method" class="method-detail ">
+          <a name="method-i-findRGSS"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">findRGSS</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="findRGSS-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">findRGSS</span>     
+   <span class="ruby-identifier">process</span> = <span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>,<span class="ruby-string">'GetCurrentProcess'</span>).<span class="ruby-identifier">call</span>
+   <span class="ruby-identifier">num</span> = <span class="ruby-string">&quot;\00&quot;&quot;</span>*<span class="ruby-value">4</span>
+   <span class="ruby-identifier">epm</span> = <span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">api</span>(<span class="ruby-string">'psapi'</span>, <span class="ruby-string">'EnumProcessModules'</span>)
+   <span class="ruby-identifier">epm</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">process</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">num</span>
+   <span class="ruby-identifier">num</span> = <span class="ruby-identifier">num</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L'</span>)[<span class="ruby-value">0</span>]
+   <span class="ruby-identifier">x</span> = <span class="ruby-string">&quot;\00&quot;&quot;</span>*(<span class="ruby-identifier">num</span>*<span class="ruby-value">8</span>)
+   <span class="ruby-identifier">lnum</span> = <span class="ruby-string">&quot;\00&quot;&quot;</span>*<span class="ruby-value">4</span>
+   <span class="ruby-identifier">epm</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">process</span>, <span class="ruby-identifier">x</span>, <span class="ruby-identifier">num</span>, <span class="ruby-identifier">lnum</span>
+   <span class="ruby-identifier">gmf</span> = <span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">api</span>(<span class="ruby-string">'kernel32'</span>, <span class="ruby-string">'GetModuleFileName'</span>)
+   <span class="ruby-identifier">x</span> = <span class="ruby-identifier">x</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L*'</span>)
+   <span class="ruby-identifier">x</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">xx</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">buf</span> = <span class="ruby-constant">ASCIICHAR</span> * <span class="ruby-value">1024</span>     <span class="ruby-comment">#avoid RMVA encoding problems</span>
+      <span class="ruby-identifier">gmf</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">xx</span>, <span class="ruby-identifier">buf</span>, <span class="ruby-value">1024</span>
+      <span class="ruby-identifier">buf</span> = <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/\00..+$/</span>){}
+      <span class="ruby-identifier">r</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">basename</span>(<span class="ruby-identifier">buf</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-constant">Seiran20</span><span class="ruby-operator">::</span><span class="ruby-constant">GPA</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">xx</span>, <span class="ruby-string">&quot;RGSSEval&quot;</span>)<span class="ruby-operator">!=</span><span class="ruby-value">0</span>
+              <span class="ruby-keyword">return</span> [<span class="ruby-identifier">buf</span>, <span class="ruby-identifier">xx</span>]
+      <span class="ruby-keyword">end</span>
+   }
+   [<span class="ruby-string">''</span>, <span class="ruby-value">0</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- findRGSS-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- findRGSS-method -->
+
+      
+        <div id="findcall-method" class="method-detail ">
+          <a name="method-i-findcall"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">findcall</span><span
+              class="method-args">(_4, _5, a, b, t)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="findcall-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">findcall</span>(<span class="ruby-identifier">_4</span>, <span class="ruby-identifier">_5</span>, <span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">t</span>)
+  <span class="ruby-identifier">_1</span>, <span class="ruby-identifier">k</span>  = [], <span class="ruby-value">-1</span>;  <span class="ruby-identifier">_1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">k</span>) <span class="ruby-keyword">while</span> <span class="ruby-identifier">k</span> = <span class="ruby-identifier">_4</span>.<span class="ruby-identifier">index</span>(<span class="ruby-node">&quot;#{a}\00&quot;&quot;</span>, <span class="ruby-identifier">k</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)
+  <span class="ruby-identifier">_2</span>, <span class="ruby-identifier">k</span>  = [], <span class="ruby-value">-1</span>;  <span class="ruby-identifier">_2</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">k</span>) <span class="ruby-keyword">while</span> <span class="ruby-identifier">k</span> = <span class="ruby-identifier">_4</span>.<span class="ruby-identifier">index</span>(<span class="ruby-node">&quot;#{b}\00&quot;&quot;</span>, <span class="ruby-identifier">k</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)
+  <span class="ruby-identifier">_3</span> = [];   
+  <span class="ruby-identifier">_1</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>  <span class="ruby-identifier">k</span>=<span class="ruby-value">-1</span>; <span class="ruby-identifier">_3</span>.<span class="ruby-identifier">push</span>(<span class="ruby-operator">-</span><span class="ruby-identifier">k</span>)  <span class="ruby-keyword">while</span> <span class="ruby-identifier">k</span> = <span class="ruby-identifier">_4</span>.<span class="ruby-identifier">index</span>([<span class="ruby-value">0x68</span>, <span class="ruby-identifier">_5</span><span class="ruby-operator">+</span><span class="ruby-identifier">x</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CL'</span>), <span class="ruby-identifier">k</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)}
+  <span class="ruby-identifier">_2</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">k</span>=<span class="ruby-value">-1</span>; <span class="ruby-identifier">_3</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">k</span>)   <span class="ruby-keyword">while</span>  <span class="ruby-identifier">k</span> = <span class="ruby-identifier">_4</span>.<span class="ruby-identifier">index</span>([<span class="ruby-value">0x68</span>, <span class="ruby-identifier">_5</span><span class="ruby-operator">+</span><span class="ruby-identifier">x</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CL'</span>), <span class="ruby-identifier">k</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)}  
+  <span class="ruby-identifier">_6</span>, <span class="ruby-identifier">_7</span> = [<span class="ruby-value">0</span>, <span class="ruby-value">0</span>], <span class="ruby-value">1.0</span><span class="ruby-operator">/</span><span class="ruby-value">0</span>
+  <span class="ruby-identifier">_3</span> = <span class="ruby-identifier">_3</span>.<span class="ruby-identifier">sort_by</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">abs</span>}
+  (<span class="ruby-identifier">_3</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>).<span class="ruby-identifier">times</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+       <span class="ruby-keyword">next</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">_3</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">_3</span>[<span class="ruby-identifier">l</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+       <span class="ruby-identifier">q</span> = <span class="ruby-identifier">_3</span>[<span class="ruby-identifier">l</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">_3</span>[<span class="ruby-identifier">l</span>]
+       <span class="ruby-keyword">if</span> <span class="ruby-identifier">_7</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">q</span>
+         <span class="ruby-identifier">_7</span> = <span class="ruby-identifier">q</span>
+         <span class="ruby-identifier">_6</span> = <span class="ruby-identifier">l</span>
+       <span class="ruby-keyword">end</span>
+  } 
+  <span class="ruby-identifier">r</span> = <span class="ruby-identifier">_3</span>[<span class="ruby-identifier">_6</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]
+  <span class="ruby-identifier">t</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">r</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span> <span class="ruby-keyword">while</span> <span class="ruby-identifier">_4</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">ord</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0xe8</span>
+    <span class="ruby-identifier">r</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">r</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span> <span class="ruby-keyword">while</span> <span class="ruby-identifier">_4</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">ord</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0xe8</span>
+  <span class="ruby-identifier">_4</span>[<span class="ruby-identifier">r</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>, <span class="ruby-value">4</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L'</span>).<span class="ruby-identifier">first</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">r</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">_5</span> <span class="ruby-operator">+</span> <span class="ruby-value">5</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- findcall-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- findcall-method -->
+
+      
+        <div id="free-method" class="method-detail ">
+          <a name="method-i-free"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">free</span><span
+              class="method-args">(addr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="free-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 201</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">free</span>(<span class="ruby-identifier">addr</span>)  <span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>, <span class="ruby-string">'GlobalFree'</span>).<span class="ruby-identifier">call</span> <span class="ruby-identifier">addr</span>  <span class="ruby-keyword">end</span></pre>
+            </div><!-- free-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- free-method -->
+
+      
+        <div id="funcaddr-method" class="method-detail ">
+          <a name="method-i-funcaddr"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">funcaddr</span><span
+              class="method-args">(dll, func)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="funcaddr-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">funcaddr</span>(<span class="ruby-identifier">dll</span>, <span class="ruby-identifier">func</span>)
+   <span class="ruby-identifier">x</span> = <span class="ruby-constant">GPA</span>.<span class="ruby-identifier">call</span>(<span class="ruby-constant">LL</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">dll</span>), <span class="ruby-identifier">func</span>)
+   <span class="ruby-identifier">x</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">x</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- funcaddr-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- funcaddr-method -->
+
+      
+        <div id="hwnd-method" class="method-detail ">
+          <a name="method-i-hwnd"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">hwnd</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="hwnd-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 287</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">hwnd</span>
+     <span class="ruby-identifier">msg</span> , <span class="ruby-identifier">r</span>, <span class="ruby-identifier">pm</span>, <span class="ruby-identifier">ac</span> = <span class="ruby-string">&quot;\00&quot;&quot;</span>*<span class="ruby-value">24</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">api</span>(<span class="ruby-string">'user32'</span>, <span class="ruby-string">'PeekMessage'</span>), <span class="ruby-identifier">api</span>(<span class="ruby-string">'user32'</span>, <span class="ruby-string">'GetAncestor'</span>)
+     <span class="ruby-identifier">loop</span> <span class="ruby-keyword">do</span>
+       <span class="ruby-keyword">return</span> <span class="ruby-identifier">r</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">pm</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">msg</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>) <span class="ruby-operator">!=</span> <span class="ruby-value">0</span> <span class="ruby-keyword">and</span> ((<span class="ruby-identifier">r</span> = <span class="ruby-identifier">ac</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">msg</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L'</span>).<span class="ruby-identifier">first</span>, <span class="ruby-value">3</span>))<span class="ruby-operator">!=</span><span class="ruby-value">0</span>)
+       <span class="ruby-constant">Graphics</span>.<span class="ruby-identifier">update</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- hwnd-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- hwnd-method -->
+
+      
+        <div id="lm-method" class="method-detail ">
+          <a name="method-i-lm"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">lm</span><span
+              class="method-args">(name)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="lm-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 401</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">lm</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-identifier">loadmodule</span>(<span class="ruby-node">&quot;C:/RMSFX/lib/#{name}.mod&quot;</span>, <span class="ruby-identifier">name</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- lm-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- lm-method -->
+
+      
+        <div id="loadmodule-method" class="method-detail ">
+          <a name="method-i-loadmodule"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">loadmodule</span><span
+              class="method-args">(name, alis = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="loadmodule-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 379</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">loadmodule</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">alis</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">r</span> = <span class="ruby-constant">MODULES</span>[<span class="ruby-identifier">alis</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">name</span>]
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">r</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">r</span>       
+  <span class="ruby-identifier">defn</span> = <span class="ruby-identifier">callproc</span>(<span class="ruby-constant">RGSSX</span>[<span class="ruby-value">0</span>]) 
+  <span class="ruby-identifier">calladdr</span> = <span class="ruby-identifier">callproc</span>(<span class="ruby-constant">GPA</span>.<span class="ruby-identifier">call</span>(<span class="ruby-constant">LL</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">name</span>), <span class="ruby-string">'InitModule'</span>))
+  <span class="ruby-identifier">this</span> = <span class="ruby-constant">MODULES</span>[<span class="ruby-identifier">alis</span>] = <span class="ruby-constant">Intern_Class_Class</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-constant">FNS</span>[<span class="ruby-identifier">alis</span>] = []
+  <span class="ruby-identifier">selfobj</span>    =  (<span class="ruby-keyword">class</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">this</span>;<span class="ruby-identifier">object_id</span>*<span class="ruby-value">2</span>; <span class="ruby-keyword">end</span>)
+  <span class="ruby-identifier">selfclass</span>  =  <span class="ruby-identifier">this</span>.<span class="ruby-identifier">object_id</span>*<span class="ruby-value">2</span>
+  <span class="ruby-identifier">fn1</span> = <span class="ruby-identifier">callback</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">addr</span><span class="ruby-operator">|</span><span class="ruby-identifier">defn</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">selfobj</span>, <span class="ruby-identifier">name</span>, <span class="ruby-identifier">addr</span>, <span class="ruby-value">-1</span>)}
+  <span class="ruby-identifier">sendmsg</span> = <span class="ruby-identifier">callback</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">receiver</span>, <span class="ruby-identifier">methodname</span>, <span class="ruby-identifier">argc</span>, <span class="ruby-identifier">args</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">recv</span>  = <span class="ruby-identifier">readstr</span> <span class="ruby-identifier">receiver</span>
+    <span class="ruby-identifier">mname</span> = <span class="ruby-identifier">readstr</span> <span class="ruby-identifier">methodname</span>
+    <span class="ruby-identifier">arg</span>   = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">args</span>, <span class="ruby-identifier">argc</span>*<span class="ruby-value">4</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L*'</span>)
+    <span class="ruby-constant">SendMsg</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">this</span>, <span class="ruby-constant">MODULES</span>[<span class="ruby-identifier">recv</span>], <span class="ruby-identifier">mname</span>, <span class="ruby-identifier">argc</span>, *<span class="ruby-identifier">arg</span>
+  }
+  <span class="ruby-constant">FNS</span>[<span class="ruby-identifier">alis</span>].<span class="ruby-identifier">push</span> <span class="ruby-identifier">fn1</span>
+  <span class="ruby-constant">FNS</span>[<span class="ruby-identifier">alis</span>].<span class="ruby-identifier">push</span> <span class="ruby-identifier">sendmsg</span>
+  <span class="ruby-identifier">calladdr</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">fn1</span>, <span class="ruby-identifier">sendmsg</span>)
+  <span class="ruby-constant">MODULES</span>[<span class="ruby-identifier">alis</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- loadmodule-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- loadmodule-method -->
+
+      
+        <div id="lock-method" class="method-detail ">
+          <a name="method-i-lock"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">lock</span><span
+              class="method-args">(mem)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="lock-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 197</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">lock</span>(<span class="ruby-identifier">mem</span>) <span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>, <span class="ruby-string">'GlobalLock'</span>).<span class="ruby-identifier">call</span> <span class="ruby-identifier">mem</span> <span class="ruby-keyword">end</span></pre>
+            </div><!-- lock-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- lock-method -->
+
+      
+        <div id="mem_readint-method" class="method-detail ">
+          <a name="method-i-mem_readint"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">mem_readint</span><span
+              class="method-args">(addr1)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="mem_readint-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 203</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">mem_readint</span>(<span class="ruby-identifier">addr1</span>) <span class="ruby-identifier">buf</span>=<span class="ruby-string">&quot;1234&quot;</span>; <span class="ruby-constant">MEM</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">buf</span>, <span class="ruby-identifier">addr1</span>, <span class="ruby-value">4</span>); <span class="ruby-keyword">end</span></pre>
+            </div><!-- mem_readint-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- mem_readint-method -->
+
+      
+        <div id="mem_writeint-method" class="method-detail ">
+          <a name="method-i-mem_writeint"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">mem_writeint</span><span
+              class="method-args">(addr1, num)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="mem_writeint-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 204</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">mem_writeint</span>(<span class="ruby-identifier">addr1</span>, <span class="ruby-identifier">num</span>); <span class="ruby-constant">MEM</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">addr1</span>, [<span class="ruby-identifier">num</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'L'</span>), <span class="ruby-value">4</span>);<span class="ruby-keyword">end</span></pre>
+            </div><!-- mem_writeint-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- mem_writeint-method -->
+
+      
+        <div id="peldr-method" class="method-detail ">
+          <a name="method-i-peldr"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">peldr</span><span
+              class="method-args">(dll, init = true)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="peldr-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 209</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">peldr</span>(<span class="ruby-identifier">dll</span>, <span class="ruby-identifier">init</span> = <span class="ruby-keyword">true</span>)
+    <span class="ruby-identifier">doshdr</span> = <span class="ruby-identifier">dll</span>[<span class="ruby-value">0</span>, <span class="ruby-value">60</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'S*'</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">dll</span>[<span class="ruby-value">60</span>, <span class="ruby-value">4</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L*'</span>)
+    <span class="ruby-identifier">signature</span> = <span class="ruby-identifier">dll</span>[<span class="ruby-value">60</span>, <span class="ruby-value">4</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L'</span>).<span class="ruby-identifier">first</span>       
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">dll</span>[<span class="ruby-identifier">signature</span>, <span class="ruby-value">2</span>] <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;PE&quot;</span>
+    <span class="ruby-identifier">newhdr</span>    = <span class="ruby-identifier">dll</span>[<span class="ruby-identifier">newhdrofs</span> = <span class="ruby-identifier">signature</span><span class="ruby-operator">+</span><span class="ruby-value">4</span>, <span class="ruby-value">20</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'SSLLLSS'</span>)
+    <span class="ruby-identifier">optheader</span> = <span class="ruby-identifier">new_optheader</span> <span class="ruby-identifier">dll</span>[<span class="ruby-identifier">opthdrofs</span> = <span class="ruby-identifier">newhdrofs</span><span class="ruby-operator">+</span><span class="ruby-value">20</span>, <span class="ruby-identifier">newhdr</span>[<span class="ruby-value">5</span>]]
+    <span class="ruby-identifier">secs</span>,<span class="ruby-identifier">dirs</span> ={}, []
+    <span class="ruby-identifier">entry</span>, <span class="ruby-identifier">imagesize</span>, <span class="ruby-identifier">codebase</span>, <span class="ruby-identifier">database</span>, <span class="ruby-identifier">imagebase</span> = <span class="ruby-identifier">optheader</span>[<span class="ruby-value">6</span>], <span class="ruby-identifier">optheader</span>[<span class="ruby-value">19</span>], <span class="ruby-identifier">optheader</span>[<span class="ruby-value">7</span>], <span class="ruby-identifier">optheader</span>[<span class="ruby-value">8</span>], <span class="ruby-identifier">optheader</span>[<span class="ruby-value">9</span>]
+    <span class="ruby-identifier">dll</span> = <span class="ruby-identifier">dll</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\00\\00&quot;&quot;</span> * (<span class="ruby-identifier">imagesize</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">dll</span>.<span class="ruby-identifier">length</span>)
+    <span class="ruby-identifier">image</span>     = <span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>, <span class="ruby-string">'VirtualAlloc'</span>).<span class="ruby-identifier">call</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">imagesize</span>*<span class="ruby-value">2</span>, <span class="ruby-value">0x1000</span>, <span class="ruby-value">0x40</span>)
+    <span class="ruby-identifier">sechdrofs</span> = <span class="ruby-identifier">opthdrofs</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">newhdr</span>[<span class="ruby-value">5</span>]
+    <span class="ruby-identifier">newhdr</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">times</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span><span class="ruby-identifier">arr</span>=<span class="ruby-identifier">new_section</span>(<span class="ruby-identifier">dll</span>[<span class="ruby-identifier">sechdrofs</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">x</span>*<span class="ruby-value">40</span>, <span class="ruby-value">40</span>]); <span class="ruby-identifier">secs</span>[<span class="ruby-identifier">arr</span>[<span class="ruby-value">0</span>]]=<span class="ruby-identifier">arr</span>}
+    <span class="ruby-identifier">optheader</span>[<span class="ruby-value">29</span>].<span class="ruby-identifier">times</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span><span class="ruby-identifier">dirs</span>.<span class="ruby-identifier">push</span> <span class="ruby-identifier">new_dir</span>(<span class="ruby-identifier">dll</span>[<span class="ruby-identifier">opthdrofs</span><span class="ruby-operator">+</span><span class="ruby-value">96</span><span class="ruby-operator">+</span><span class="ruby-identifier">x</span>*<span class="ruby-value">8</span>, <span class="ruby-value">8</span>])}
+    <span class="ruby-identifier">addr</span> = <span class="ruby-identifier">dll</span>.<span class="ruby-identifier">to_ptr</span>
+    <span class="ruby-identifier">r</span> = <span class="ruby-value">0</span>
+    <span class="ruby-identifier">secs</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">copy</span>(<span class="ruby-identifier">x</span>[<span class="ruby-value">2</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span>, <span class="ruby-identifier">x</span>[<span class="ruby-value">4</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">addr</span>, <span class="ruby-identifier">x</span>[<span class="ruby-value">1</span>])}       
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">secs</span>[<span class="ruby-string">&quot;.reloc&quot;</span>]
+      <span class="ruby-identifier">relocdata</span> = <span class="ruby-identifier">dll</span>[<span class="ruby-identifier">secs</span>[<span class="ruby-string">&quot;.reloc&quot;</span>][<span class="ruby-value">4</span>], <span class="ruby-identifier">secs</span>[<span class="ruby-string">&quot;.reloc&quot;</span>][<span class="ruby-value">1</span>]]
+      <span class="ruby-identifier">ptr</span>, <span class="ruby-identifier">r</span>, <span class="ruby-identifier">len</span> = <span class="ruby-value">0</span>, [], <span class="ruby-identifier">relocdata</span>.<span class="ruby-identifier">length</span>
+      <span class="ruby-identifier">off</span> =  <span class="ruby-identifier">image</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">imagebase</span>       
+      <span class="ruby-keyword">while</span> <span class="ruby-identifier">ptr</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">len</span>
+        <span class="ruby-identifier">st</span>, <span class="ruby-identifier">le</span> = <span class="ruby-identifier">relocdata</span>[<span class="ruby-identifier">ptr</span>, <span class="ruby-value">8</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'LL'</span>)
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">relocdata</span>[<span class="ruby-identifier">ptr</span> <span class="ruby-operator">+=</span> <span class="ruby-value">8</span>, <span class="ruby-identifier">le</span> <span class="ruby-operator">-</span> <span class="ruby-value">8</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'S*'</span>)
+        <span class="ruby-identifier">data</span>.<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span><span class="ruby-identifier">x</span>&amp;<span class="ruby-value">0xF000</span> <span class="ruby-operator">==</span> <span class="ruby-value">0x3000</span> }.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+              <span class="ruby-identifier">addr</span> = <span class="ruby-identifier">st</span><span class="ruby-operator">+</span>(<span class="ruby-identifier">x</span>&amp;<span class="ruby-value">0xFFF</span>); 
+              <span class="ruby-keyword">next</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">addr</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-identifier">imagesize</span>
+              <span class="ruby-identifier">mem_writeint</span>(<span class="ruby-identifier">image</span><span class="ruby-operator">+</span><span class="ruby-identifier">addr</span>,<span class="ruby-identifier">off</span><span class="ruby-operator">+</span><span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">image</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">addr</span>, <span class="ruby-value">4</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'V'</span>).<span class="ruby-identifier">first</span>)
+        }
+        <span class="ruby-identifier">ptr</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">le</span> <span class="ruby-operator">-</span> <span class="ruby-value">8</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">import</span>  = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">image</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">dirs</span>[<span class="ruby-value">1</span>][<span class="ruby-value">0</span>], <span class="ruby-identifier">len</span> = <span class="ruby-identifier">dirs</span>[<span class="ruby-value">1</span>][<span class="ruby-value">1</span>])
+    <span class="ruby-identifier">imports</span> = {}
+    <span class="ruby-identifier">ptr</span> = <span class="ruby-value">0</span>
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">ptr</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">len</span>
+      <span class="ruby-identifier">pint</span>, <span class="ruby-identifier">time</span>, <span class="ruby-identifier">fw</span>, <span class="ruby-identifier">dl</span>, <span class="ruby-identifier">ft</span> = <span class="ruby-identifier">import</span>[<span class="ruby-identifier">ptr</span>, <span class="ruby-value">20</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L*'</span>)
+      <span class="ruby-keyword">break</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">ft</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-keyword">next</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">ft</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">imagesize</span>
+      <span class="ruby-identifier">dlname</span> = <span class="ruby-identifier">readstr</span>(<span class="ruby-identifier">dl</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span>)
+      <span class="ruby-identifier">imports</span>[<span class="ruby-identifier">dlname</span>] <span class="ruby-operator">||=</span> {}
+      <span class="ruby-identifier">piat</span> = <span class="ruby-identifier">ft</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span>
+      <span class="ruby-identifier">pint</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">image</span>
+      <span class="ruby-keyword">while</span> <span class="ruby-keyword">true</span>
+         <span class="ruby-identifier">fn</span>    = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">piat</span>,<span class="ruby-value">4</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L'</span>).<span class="ruby-identifier">first</span>
+         <span class="ruby-identifier">aaddr</span> = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">pint</span>,<span class="ruby-value">4</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L'</span>).<span class="ruby-identifier">first</span>
+         <span class="ruby-keyword">break</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">fn</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+         <span class="ruby-identifier">imports</span>[<span class="ruby-identifier">dlname</span>][<span class="ruby-identifier">str</span> = <span class="ruby-identifier">readstr</span>(<span class="ruby-identifier">aaddr</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span> <span class="ruby-operator">+</span> <span class="ruby-value">2</span>)] = <span class="ruby-identifier">piat</span>
+         <span class="ruby-identifier">str1</span> = <span class="ruby-identifier">readstr</span>(<span class="ruby-identifier">aaddr</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span> <span class="ruby-operator">+</span> <span class="ruby-value">2</span>)
+         <span class="ruby-identifier">str1</span> = <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">str1</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;&quot;</span>
+         <span class="ruby-identifier">ord</span> = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">aaddr</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span>, <span class="ruby-value">2</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'S'</span>).<span class="ruby-identifier">first</span>
+         <span class="ruby-identifier">addr</span> = <span class="ruby-identifier">addrof</span>(<span class="ruby-identifier">dlname</span>, <span class="ruby-identifier">str</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">ord</span>)
+         <span class="ruby-identifier">p</span> <span class="ruby-node">&quot;#{dlname}.#{str}/#{ord}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">addr</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+         <span class="ruby-identifier">writemem</span>(<span class="ruby-identifier">piat</span>, <span class="ruby-value">4</span>, [<span class="ruby-identifier">addr</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'L'</span>))
+         <span class="ruby-identifier">piat</span> <span class="ruby-operator">+=</span> <span class="ruby-value">4</span>; <span class="ruby-identifier">pint</span> <span class="ruby-operator">+=</span> <span class="ruby-value">4</span>
+      <span class="ruby-keyword">end</span> 
+      <span class="ruby-identifier">ptr</span> <span class="ruby-operator">+=</span> <span class="ruby-value">20</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">exp</span> = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">image</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">dirs</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>] ,<span class="ruby-identifier">len</span> = <span class="ruby-identifier">dirs</span>[<span class="ruby-value">0</span>][<span class="ruby-value">1</span>])
+    <span class="ruby-identifier">export</span> = <span class="ruby-identifier">exp</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'LLSSLLLLLLL'</span>)
+    <span class="ruby-identifier">name</span> = <span class="ruby-identifier">readstr</span>(<span class="ruby-identifier">export</span>[<span class="ruby-value">4</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span>)
+    <span class="ruby-identifier">ef</span>, <span class="ruby-identifier">en</span> = <span class="ruby-identifier">export</span>[<span class="ruby-value">6</span>], <span class="ruby-identifier">export</span>[<span class="ruby-value">7</span>]
+    <span class="ruby-identifier">eat</span>,<span class="ruby-identifier">ent</span>,<span class="ruby-identifier">eot</span> = <span class="ruby-identifier">export</span>[<span class="ruby-value">8</span>], <span class="ruby-identifier">export</span>[<span class="ruby-value">9</span>], <span class="ruby-identifier">export</span>[<span class="ruby-value">10</span>]
+    <span class="ruby-identifier">eat</span> = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">eat</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span>, <span class="ruby-identifier">ef</span> * <span class="ruby-value">4</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L*'</span>).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-identifier">image</span>}
+    <span class="ruby-identifier">ent</span> = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">ent</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span>, <span class="ruby-identifier">en</span> * <span class="ruby-value">4</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L*'</span>).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> 
+         <span class="ruby-keyword">if</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">imagesize</span>
+           <span class="ruby-identifier">readstr</span>(<span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-identifier">image</span>)
+        <span class="ruby-keyword">end</span>
+   }
+    <span class="ruby-identifier">eot</span> = <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">eot</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">image</span>, <span class="ruby-identifier">en</span> * <span class="ruby-value">2</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'S*'</span>)
+    <span class="ruby-identifier">names</span> = {}
+    <span class="ruby-identifier">eat</span>.<span class="ruby-identifier">each_index</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span><span class="ruby-identifier">names</span>[<span class="ruby-identifier">ent</span>[<span class="ruby-identifier">x</span>]] = <span class="ruby-identifier">eat</span>[<span class="ruby-identifier">eot</span>[<span class="ruby-identifier">x</span>]]}
+    <span class="ruby-identifier">export</span> = [<span class="ruby-identifier">eat</span>, <span class="ruby-identifier">ent</span>, <span class="ruby-identifier">eot</span>, <span class="ruby-identifier">names</span>]
+    <span class="ruby-identifier">callproc</span>(<span class="ruby-identifier">image</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">entry</span>, <span class="ruby-value">:stdcall</span>).<span class="ruby-identifier">call</span> <span class="ruby-identifier">image</span>,<span class="ruby-value">1</span>,<span class="ruby-value">1</span>  <span class="ruby-keyword">if</span> <span class="ruby-identifier">init</span> 
+    { <span class="ruby-value">:image</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">image</span>, <span class="ruby-value">:entry</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">entry</span>, <span class="ruby-value">:imagesize</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">imagesize</span>, <span class="ruby-value">:imports</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">imports</span>, <span class="ruby-value">:exp_name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">name</span>, <span class="ruby-value">:exp_func</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">names</span>}
+  <span class="ruby-keyword">end</span></pre>
+            </div><!-- peldr-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- peldr-method -->
+
+      
+        <div id="read_cbtext-method" class="method-detail ">
+          <a name="method-i-read_cbtext"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">read_cbtext</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="read_cbtext-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 297</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_cbtext</span>
+     <span class="ruby-identifier">h</span> = <span class="ruby-identifier">api</span>(<span class="ruby-string">'User32'</span>, <span class="ruby-string">'OpenClipboard'</span>).<span class="ruby-identifier">call</span> <span class="ruby-identifier">hwnd</span>
+     <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;Clipboard already open&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+     <span class="ruby-identifier">hgl</span> = <span class="ruby-identifier">api</span>(<span class="ruby-string">'User32'</span>, <span class="ruby-string">'GetClipboardData'</span>).<span class="ruby-identifier">call</span> <span class="ruby-value">13</span>
+     <span class="ruby-identifier">r</span> = <span class="ruby-identifier">lock</span>(<span class="ruby-identifier">hgl</span>)
+     <span class="ruby-identifier">ret</span> = <span class="ruby-identifier">readwstr</span>(<span class="ruby-identifier">r</span>)
+     <span class="ruby-identifier">unlock</span>(<span class="ruby-identifier">hgl</span>)
+     <span class="ruby-identifier">api</span>(<span class="ruby-string">'User32'</span>, <span class="ruby-string">'CloseClipboard'</span>).<span class="ruby-identifier">call</span>
+     <span class="ruby-identifier">to_mb</span>(<span class="ruby-identifier">ret</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;\00\\00&quot;&quot;</span>).<span class="ruby-identifier">chop</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- read_cbtext-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- read_cbtext-method -->
+
+      
+        <div id="read_editordata-method" class="method-detail ">
+          <a name="method-i-read_editordata"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">read_editordata</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="read_editordata-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 345</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_editordata</span>
+  <span class="ruby-identifier">ret</span> = <span class="ruby-identifier">read_rawdata</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">x</span>[<span class="ruby-regexp">/RPG/</span>] <span class="ruby-keyword">or</span> <span class="ruby-identifier">x</span>[<span class="ruby-regexp">/VX Ace/</span>] 
+  }
+  <span class="ruby-identifier">ret</span>.<span class="ruby-identifier">slice!</span>(<span class="ruby-value">0</span>, <span class="ruby-value">4</span>)
+  <span class="ruby-constant">Marshal</span>.<span class="ruby-identifier">load</span>(<span class="ruby-identifier">ret</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- read_editordata-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- read_editordata-method -->
+
+      
+        <div id="readmem-method" class="method-detail ">
+          <a name="method-i-readmem"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">readmem</span><span
+              class="method-args">(start, len)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="readmem-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 62</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">start</span>, <span class="ruby-identifier">len</span>)
+  <span class="ruby-identifier">api</span>(<span class="ruby-string">'kernel32'</span>, <span class="ruby-string">'RtlMoveMemory'</span>).<span class="ruby-identifier">call</span> <span class="ruby-identifier">buf</span> = <span class="ruby-string">&quot;\00&quot;&quot;</span>*<span class="ruby-identifier">len</span>, <span class="ruby-identifier">start</span>, <span class="ruby-identifier">len</span>
+  <span class="ruby-identifier">buf</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- readmem-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- readmem-method -->
+
+      
+        <div id="readmodule-method" class="method-detail ">
+          <a name="method-i-readmodule"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">readmodule</span><span
+              class="method-args">(name)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="readmodule-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">readmodule</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-identifier">api</span>(<span class="ruby-string">'psapi'</span>, <span class="ruby-string">'GetModuleInformation'</span>).<span class="ruby-identifier">call</span>(<span class="ruby-identifier">api</span>(<span class="ruby-string">'kernel32'</span>, <span class="ruby-string">'GetCurrentProcess'</span>).<span class="ruby-identifier">call</span>,<span class="ruby-identifier">handle</span>=<span class="ruby-identifier">api</span>(<span class="ruby-string">'kernel32'</span>, <span class="ruby-string">'GetModuleHandle'</span>).<span class="ruby-identifier">call</span>(<span class="ruby-identifier">name</span>),<span class="ruby-identifier">info</span> = <span class="ruby-string">&quot;\00&quot;&quot;</span>*<span class="ruby-value">12</span>,<span class="ruby-value">12</span>)
+  <span class="ruby-identifier">api</span>(<span class="ruby-string">'kernel32'</span>, <span class="ruby-string">'RtlMoveMemory'</span>).<span class="ruby-identifier">call</span>(<span class="ruby-identifier">buf</span> = <span class="ruby-string">&quot;\00&quot;&quot;</span>*<span class="ruby-identifier">info</span>[<span class="ruby-value">4</span>, <span class="ruby-value">4</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L'</span>).<span class="ruby-identifier">first</span>, <span class="ruby-identifier">info</span>[<span class="ruby-value">0</span>, <span class="ruby-value">4</span>].<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'L'</span>).<span class="ruby-identifier">first</span>, <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">length</span>)
+  [<span class="ruby-identifier">buf</span>, <span class="ruby-identifier">handle</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- readmodule-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- readmodule-method -->
+
+      
+        <div id="readstr-method" class="method-detail ">
+          <a name="method-i-readstr"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">readstr</span><span
+              class="method-args">(x)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="readstr-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 206</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">readstr</span>(<span class="ruby-identifier">x</span>) <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">x</span>, <span class="ruby-constant">SL</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">x</span>)); <span class="ruby-keyword">end</span></pre>
+            </div><!-- readstr-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- readstr-method -->
+
+      
+        <div id="readwstr-method" class="method-detail ">
+          <a name="method-i-readwstr"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">readwstr</span><span
+              class="method-args">(x)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="readwstr-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 207</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">readwstr</span>(<span class="ruby-identifier">x</span>) <span class="ruby-identifier">readmem</span>(<span class="ruby-identifier">x</span>, <span class="ruby-constant">WSL</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">x</span>)*<span class="ruby-value">2</span>); <span class="ruby-keyword">end</span></pre>
+            </div><!-- readwstr-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- readwstr-method -->
+
+      
+        <div id="rgssx_increment-method" class="method-detail ">
+          <a name="method-i-rgssx_increment"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">rgssx_increment</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="rgssx_increment-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 98</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">rgssx_increment</span>
+  <span class="ruby-identifier">text</span>,<span class="ruby-identifier">handle</span> = <span class="ruby-identifier">readmodule</span>(<span class="ruby-constant">ID_RGSS</span>)
+  <span class="ruby-identifier">text</span> = <span class="ruby-identifier">text</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-string">'C*'</span>).<span class="ruby-identifier">pack</span>(<span class="ruby-string">'C*'</span>)
+  [
+   <span class="ruby-identifier">rb_define_method</span> = <span class="ruby-identifier">findcall</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">handle</span>, <span class="ruby-string">'Bitmap'</span>, <span class="ruby-string">'initialize'</span>, <span class="ruby-value">0</span>),
+   <span class="ruby-identifier">rb_intern</span>        = <span class="ruby-identifier">findcall</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">handle</span>, <span class="ruby-string">'Marshal'</span>, <span class="ruby-string">'dump'</span>, <span class="ruby-value">0</span>),
+   <span class="ruby-identifier">rb_funcall</span>       = <span class="ruby-identifier">findcall</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">handle</span>, <span class="ruby-string">'Marshal'</span>, <span class="ruby-string">'dump'</span>, <span class="ruby-value">1</span>),
+  ]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- rgssx_increment-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- rgssx_increment-method -->
+
+      
+        <div id="thiscall-method" class="method-detail ">
+          <a name="method-i-thiscall"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">thiscall</span><span
+              class="method-args">(this, addr, convention = :stdcall, type = :vc)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="thiscall-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 140</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">thiscall</span>(<span class="ruby-identifier">this</span>, <span class="ruby-identifier">addr</span>, <span class="ruby-identifier">convention</span> = <span class="ruby-value">:stdcall</span>, <span class="ruby-identifier">type</span> = <span class="ruby-value">:vc</span>)
+  <span class="ruby-identifier">stdcall</span> = <span class="ruby-identifier">convention</span> <span class="ruby-operator">==</span> <span class="ruby-value">:stdcall</span>
+  <span class="ruby-identifier">vc</span>     = <span class="ruby-identifier">type</span> <span class="ruby-operator">==</span> <span class="ruby-value">:vc</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;addr == 0 &quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">addr</span>.<span class="ruby-identifier">to_ptr</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">code</span>=[<span class="ruby-value">0x55</span>,<span class="ruby-value">0xe589</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CS'</span>)
+  <span class="ruby-identifier">code1</span> = <span class="ruby-identifier">code</span>
+  <span class="ruby-identifier">code2</span> = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">vc</span>
+     <span class="ruby-identifier">code2</span> <span class="ruby-operator">+=</span> [<span class="ruby-value">0x51</span>, <span class="ruby-value">0xB9</span>, <span class="ruby-identifier">this</span>.<span class="ruby-identifier">to_ptr</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CCL'</span>)
+  <span class="ruby-keyword">else</span>
+     <span class="ruby-identifier">code2</span> <span class="ruby-operator">+=</span> [<span class="ruby-value">0x68</span>, <span class="ruby-identifier">this</span>.<span class="ruby-identifier">to_ptr</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CL'</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">code2</span> <span class="ruby-operator">+=</span> [<span class="ruby-value">0xb8</span>, <span class="ruby-identifier">addr</span>.<span class="ruby-identifier">to_ptr</span>, <span class="ruby-value">0xC481D0FF</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CLL'</span>)
+  <span class="ruby-identifier">code3</span> = [<span class="ruby-value">0x59</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'C'</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">vc</span>
+  <span class="ruby-identifier">code3</span> <span class="ruby-operator">+=</span> [<span class="ruby-value">0x10c2c9</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'L'</span>)
+  <span class="ruby-identifier">apicall</span> = <span class="ruby-identifier">api</span>(<span class="ruby-string">'user32'</span>, <span class="ruby-string">'CallWindowProcA'</span>)
+  <span class="ruby-identifier">lambda</span>{<span class="ruby-operator">|</span>*<span class="ruby-identifier">args</span><span class="ruby-operator">|</span>
+  <span class="ruby-identifier">apicall</span>.<span class="ruby-identifier">call</span>(
+     <span class="ruby-identifier">code1</span><span class="ruby-operator">+</span><span class="ruby-identifier">args</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> [<span class="ruby-value">0x68</span>, <span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_ptr</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'CL'</span>)}.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span><span class="ruby-operator">+</span><span class="ruby-identifier">code2</span><span class="ruby-operator">+</span>[(<span class="ruby-identifier">stdcall</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span>*<span class="ruby-value">4</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">stdcall</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">vc</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-value">4</span>))].<span class="ruby-identifier">pack</span>(<span class="ruby-string">'L'</span>)<span class="ruby-operator">+</span><span class="ruby-identifier">code3</span>,<span class="ruby-value">0</span>,<span class="ruby-value">0</span>,<span class="ruby-value">0</span>,<span class="ruby-value">0</span>
+   )
+  } 
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- thiscall-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- thiscall-method -->
+
+      
+        <div id="to_mb-method" class="method-detail ">
+          <a name="method-i-to_mb"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_mb</span><span
+              class="method-args">(str, cp = 65001)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="to_mb-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 168</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_mb</span>(<span class="ruby-identifier">str</span>, <span class="ruby-identifier">cp</span> = <span class="ruby-value">65001</span>)
+  (<span class="ruby-identifier">buf</span> = <span class="ruby-string">&quot;\00\\00&quot;&quot;</span>* <span class="ruby-identifier">str</span>.<span class="ruby-identifier">length</span>)[<span class="ruby-value">0</span>, <span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>, <span class="ruby-string">'WideCharToMultiByte'</span>).<span class="ruby-identifier">call</span>(<span class="ruby-identifier">cp</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">str</span>.<span class="ruby-identifier">to_ptr</span>, <span class="ruby-value">-1</span>, <span class="ruby-identifier">buf</span>, <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">length</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>)]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_mb-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_mb-method -->
+
+      
+        <div id="to_wc-method" class="method-detail ">
+          <a name="method-i-to_wc"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_wc</span><span
+              class="method-args">(str, cp = 65001)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="to_wc-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 164</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_wc</span>(<span class="ruby-identifier">str</span>, <span class="ruby-identifier">cp</span> = <span class="ruby-value">65001</span>)
+  (<span class="ruby-identifier">buf</span> = <span class="ruby-string">&quot;\00\\00&quot;&quot;</span>*<span class="ruby-identifier">str</span>.<span class="ruby-identifier">length</span>)[<span class="ruby-value">0</span>, <span class="ruby-value">2</span>*<span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>, <span class="ruby-string">'MultiByteToWideChar'</span>).<span class="ruby-identifier">call</span>(<span class="ruby-identifier">cp</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">str</span>.<span class="ruby-identifier">to_ptr</span>, <span class="ruby-value">-1</span>, <span class="ruby-identifier">buf</span>, <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">length</span>)]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_wc-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_wc-method -->
+
+      
+        <div id="unlock-method" class="method-detail ">
+          <a name="method-i-unlock"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">unlock</span><span
+              class="method-args">(mem)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="unlock-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 198</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">unlock</span>(<span class="ruby-identifier">mem</span>) <span class="ruby-identifier">api</span>(<span class="ruby-string">'Kernel32'</span>, <span class="ruby-string">'GlobalUnlock'</span>).<span class="ruby-identifier">call</span> <span class="ruby-identifier">mem</span> <span class="ruby-keyword">end</span></pre>
+            </div><!-- unlock-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- unlock-method -->
+
+      
+        <div id="urlread-method" class="method-detail ">
+          <a name="method-i-urlread"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">urlread</span><span
+              class="method-args">(url)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="urlread-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 173</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">urlread</span>(<span class="ruby-identifier">url</span>)
+    <span class="ruby-identifier">api</span>(<span class="ruby-string">'urlmon'</span>, <span class="ruby-string">'URLDownloadToCacheFile'</span>).<span class="ruby-identifier">call</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">url</span>, <span class="ruby-identifier">buf</span>=<span class="ruby-string">&quot;\00&quot;&quot;</span>*<span class="ruby-value">1024</span>, <span class="ruby-value">1024</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>)
+    <span class="ruby-identifier">open</span>(<span class="ruby-identifier">buf</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-regexp">/\00++$/</span>){}, <span class="ruby-string">'rb'</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">read</span>}
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- urlread-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- urlread-method -->
+
+      
+        <div id="writemem-method" class="method-detail ">
+          <a name="method-i-writemem"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">writemem</span><span
+              class="method-args">(start, len, value)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="writemem-source">
+<pre>
+<span class="ruby-comment"># File s20.rb, line 67</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">writemem</span>(<span class="ruby-identifier">start</span>, <span class="ruby-identifier">len</span>, <span class="ruby-identifier">value</span>)
+  <span class="ruby-identifier">api</span>(<span class="ruby-string">'kernel32'</span>, <span class="ruby-string">'RtlMoveMemory'</span>).<span class="ruby-identifier">call</span> <span class="ruby-identifier">start</span>, <span class="ruby-identifier">value</span>, [<span class="ruby-identifier">len</span>, <span class="ruby-identifier">value</span>.<span class="ruby-identifier">length</span>].<span class="ruby-identifier">min</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- writemem-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- writemem-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

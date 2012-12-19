@@ -1,0 +1,20 @@
+﻿module DATA
+  @data = ""
+  def self.read(len = nil) 
+    @data.slice!(0, [len || @data.length, @data.length].min)
+  end
+  @datafile = ""
+  def self.rewind(datafile = nil) @datafile = datafile || @datafile;  @data = $__dataobj__[@datafile].to_s.dup  end
+end
+ 
+$__dataobj__ = {}
+$RGSS_SCRIPTS.each_with_index{|x, i|
+  $__dataobj__[sprintf("{%04d}", i)] = (x[3] = "DATA.rewind(__FILE__)\n#{x[3]}")[/__END__[\r\s]*\n([\w\W]+)$/, 1]  
+}
+
+$RGSS_SCRIPTS.each_with_index{|x, i|
+  x[3].gsub!(/__FILE__/){"(#{sprintf("{%04d}", i).inspect})"}
+  
+}
+
+

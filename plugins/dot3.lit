@@ -1,0 +1,4 @@
+﻿$RGSS_SCRIPTS.each_with_index{|x, i|
+  x[3].gsub!(/^(\s*)\.\.\.\s*$/){"#{$1}throw NotImplementedError"}
+}
+

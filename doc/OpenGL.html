@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=GBK" http-equiv="Content-Type" />
+
+  <title>Class: OpenGL</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./opengl_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="opengl.rb">opengl.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="ExternalWrapper.html">ExternalWrapper</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-5B-5D">::[]</a></li>
+          
+          <li><a href="#method-c-compile">::compile</a></li>
+          
+          <li><a href="#method-c-init">::init</a></li>
+          
+          <li><a href="#method-c-save_to_bitmap">::save_to_bitmap</a></li>
+          
+          <li><a href="#method-c-scene">::scene</a></li>
+          
+          <li><a href="#method-c-setcurrent">::setcurrent</a></li>
+          
+          <li><a href="#method-c-translate">::translate</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./conf/lang_txt.html">lang.txt</a></li>
+        
+          <li class="file"><a href="./license/vorbis-tools/LICENSE.html">LICENSE</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./FModEx.html">FModEx</a></li>
+        
+          <li><a href="./FModEx/Channel.html">FModEx::Channel</a></li>
+        
+          <li><a href="./FModEx/DLL.html">FModEx::DLL</a></li>
+        
+          <li><a href="./FModEx/Sound.html">FModEx::Sound</a></li>
+        
+          <li><a href="./FModEx/System.html">FModEx::System</a></li>
+        
+          <li><a href="./Lang.html">Lang</a></li>
+        
+          <li><a href="./Lang/Lang.html">Lang::Lang</a></li>
+        
+          <li><a href="./Lang/Lang/Lang.html">Lang::Lang::Lang</a></li>
+        
+          <li><a href="./Lang/Lang/Lang/Opt.html">Lang::Lang::Lang::Opt</a></li>
+        
+          <li><a href="./Seiran20.html">Seiran20</a></li>
+        
+          <li><a href="./Seiran20/Intern_Class.html">Seiran20::Intern_Class</a></li>
+        
+          <li><a href="./Seiran20/Intern_Class_Class.html">Seiran20::Intern_Class_Class</a></li>
+        
+          <li><a href="./Seiran20/Internal_Callback.html">Seiran20::Internal_Callback</a></li>
+        
+          <li><a href="./ERB.html">ERB</a></li>
+        
+          <li><a href="./ERB/DefMethod.html">ERB::DefMethod</a></li>
+        
+          <li><a href="./ERB/Util.html">ERB::Util</a></li>
+        
+          <li><a href="./ExtRuby.html">ExtRuby</a></li>
+        
+          <li><a href="./ExtRuby/Object.html">ExtRuby::Object</a></li>
+        
+          <li><a href="./ExtRuby/Toplevel_Object.html">ExtRuby::Toplevel_Object</a></li>
+        
+          <li><a href="./Roost.html">Roost</a></li>
+        
+          <li><a href="./Roost/Dynamic.html">Roost::Dynamic</a></li>
+        
+          <li><a href="./Roost/Dynamic/Dyn.html">Roost::Dynamic::Dyn</a></li>
+        
+          <li><a href="./FMod.html">FMod</a></li>
+        
+          <li><a href="./FMod/SoundFile.html">FMod::SoundFile</a></li>
+        
+          <li><a href="./UDP.html">UDP</a></li>
+        
+          <li><a href="./UDP/EndPoint.html">UDP::EndPoint</a></li>
+        
+          <li><a href="./Archive.html">Archive</a></li>
+        
+          <li><a href="./Audio.html">Audio</a></li>
+        
+          <li><a href="./ExternalWrapper.html">ExternalWrapper</a></li>
+        
+          <li><a href="./Hash.html">Hash</a></li>
+        
+          <li><a href="./Integer.html">Integer</a></li>
+        
+          <li><a href="./LibVF.html">LibVF</a></li>
+        
+          <li><a href="./Libpng.html">Libpng</a></li>
+        
+          <li><a href="./Metasm.html">Metasm</a></li>
+        
+          <li><a href="./OS.html">OS</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./OpenGL.html">OpenGL</a></li>
+        
+          <li><a href="./Python.html">Python</a></li>
+        
+          <li><a href="./ScanError.html">ScanError</a></li>
+        
+          <li><a href="./SimplePipe.html">SimplePipe</a></li>
+        
+          <li><a href="./String.html">String</a></li>
+        
+          <li><a href="./StringScanner.html">StringScanner</a></li>
+        
+          <li><a href="./Target.html">Target</a></li>
+        
+          <li><a href="./TestShow.html">TestShow</a></li>
+        
+          <li><a href="./UI.html">UI</a></li>
+        
+          <li><a href="./VER.html">VER</a></li>
+        
+          <li><a href="./Which.html">Which</a></li>
+        
+          <li><a href="./WinSock2Constants.html">WinSock2Constants</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">OpenGL</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="PFD">PFD</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="5B-5D-method" class="method-detail ">
+          <a name="method-c-5B-5D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">[]</span><span
+              class="method-args">(a)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="5B-5D-source">
+<pre>
+<span class="ruby-comment"># File opengl.rb, line 62</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-operator">[]</span>(<span class="ruby-identifier">a</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">to_s</span>[<span class="ruby-regexp">/^glu/</span>]
+        <span class="ruby-constant">CACHE</span>[<span class="ruby-identifier">a</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">capi</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-value">:GLU</span>), <span class="ruby-identifier">a</span>.<span class="ruby-identifier">to_s</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">CACHE</span>[<span class="ruby-identifier">a</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">capi</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-value">:GL</span>), <span class="ruby-identifier">a</span>.<span class="ruby-identifier">to_s</span>)
+      <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 5B-5D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 5B-5D-method -->
+
+      
+        <div id="compile-method" class="method-detail ">
+          <a name="method-c-compile"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">compile</span><span
+              class="method-args">(text)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="compile-source">
+<pre>
+<span class="ruby-comment"># File opengl.rb, line 57</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">compile</span>(<span class="ruby-identifier">text</span>)
+   <span class="ruby-identifier">text</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/(?&lt;![\$@]])([a-z][A-Za-z0-9]+\s*)\(/</span>){<span class="ruby-node">&quot;self[:#{$1}].call(&quot;</span>}.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/-[0-9]+\.[0-9]+[A-Za-z]?/</span>){<span class="ruby-identifier">translate</span>(<span class="ruby-node">$&amp;</span>, <span class="ruby-keyword">true</span>)}.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/[0-9]+\.[0-9]+[A-Za-z]?/</span>){<span class="ruby-identifier">translate</span>(<span class="ruby-node">$&amp;</span>)}.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/[A-Z0-9_]+/</span>){<span class="ruby-ivar">@constants</span>[<span class="ruby-node">$&amp;</span>] <span class="ruby-operator">||</span> <span class="ruby-node">$&amp;</span>}.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/\/\//</span>){<span class="ruby-node">&quot;#&quot;</span>}
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- compile-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- compile-method -->
+
+      
+        <div id="init-method" class="method-detail ">
+          <a name="method-c-init"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">init</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="init-source">
+<pre>
+<span class="ruby-comment"># File opengl.rb, line 5</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">init</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">const_set</span> <span class="ruby-value">:GL</span>, <span class="ruby-identifier">find</span>(<span class="ruby-string">&quot;opengl32.dll&quot;</span>)
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">const_set</span> <span class="ruby-value">:GLU</span>, <span class="ruby-identifier">find</span>(<span class="ruby-string">&quot;glu32.dll&quot;</span>)
+    <span class="ruby-ivar">@const</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-string">&quot;C:/RMSFX/include/gl.h&quot;</span>)
+    <span class="ruby-ivar">@constants</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">h</span>, <span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>] = <span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>}
+    <span class="ruby-ivar">@const</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-node">/^#define\s+(\S+)\s+(\S+)/</span>){
+        <span class="ruby-ivar">@constants</span>[<span class="ruby-node">$1</span>] = <span class="ruby-node">$2</span>
+    }
+    <span class="ruby-constant">Graphics</span>.<span class="ruby-identifier">update</span>
+    <span class="ruby-constant">USER32</span>.<span class="ruby-constant">SetWindowLong</span>(<span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">hwnd</span>, <span class="ruby-value">-16</span>, <span class="ruby-constant">USER32</span>.<span class="ruby-constant">GetWindowLong</span>(<span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">hwnd</span>, <span class="ruby-value">-16</span>) <span class="ruby-operator">|</span> <span class="ruby-value">0x6000000</span>)
+    <span class="ruby-ivar">@hwnd</span> = <span class="ruby-constant">USER32</span>.<span class="ruby-constant">CreateWindowEx</span>(<span class="ruby-value">0</span>, <span class="ruby-string">&quot;Button&quot;</span>, <span class="ruby-string">&quot;Hello&quot;</span>, <span class="ruby-value">0x56000000</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-value">320</span>, <span class="ruby-value">240</span>, <span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">hwnd</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>)
+<span class="ruby-comment">#USER32.SetWindowLong(@hwnd, -16, Seiran20.funcaddr('user32', 'DefWindowProcA'))</span>
+    <span class="ruby-ivar">@hdc</span>  = <span class="ruby-constant">USER32</span>.<span class="ruby-constant">GetDC</span> <span class="ruby-ivar">@hwnd</span>
+    <span class="ruby-ivar">@pf</span>   = <span class="ruby-constant">GDI32</span>.<span class="ruby-constant">ChoosePixelFormat</span>(<span class="ruby-ivar">@hdc</span>, <span class="ruby-constant">PFD</span>)
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;error ChoosePixelFormat&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pf</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;error SetPixelFormat&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-value">0</span> <span class="ruby-operator">==</span> <span class="ruby-constant">GDI32</span>.<span class="ruby-constant">SetPixelFormat</span>(<span class="ruby-ivar">@hdc</span>, <span class="ruby-ivar">@pf</span>, <span class="ruby-constant">PFD</span>)
+    <span class="ruby-ivar">@hrc</span> = <span class="ruby-keyword">self</span>[<span class="ruby-value">:wglCreateContext</span>].<span class="ruby-identifier">call</span> <span class="ruby-ivar">@hdc</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;error wglCreateContext&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-value">0</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@hrc</span>
+  <span class="ruby-keyword">end</span></pre>
+            </div><!-- init-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- init-method -->
+
+      
+        <div id="save_to_bitmap-method" class="method-detail ">
+          <a name="method-c-save_to_bitmap"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">save_to_bitmap</span><span
+              class="method-args">(bitmap)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="save_to_bitmap-source">
+<pre>
+<span class="ruby-comment"># File opengl.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">save_to_bitmap</span>(<span class="ruby-identifier">bitmap</span>)
+  <span class="ruby-identifier">width</span>  = <span class="ruby-identifier">bitmap</span>.<span class="ruby-identifier">width</span>
+  <span class="ruby-identifier">height</span> = <span class="ruby-identifier">bitmap</span>.<span class="ruby-identifier">height</span>
+  <span class="ruby-identifier">addr</span>   = <span class="ruby-constant">Libpng</span>.<span class="ruby-identifier">ptr</span>(<span class="ruby-identifier">bitmap</span>)
+  <span class="ruby-identifier">hDIB</span>     = <span class="ruby-constant">KERNEL32</span>.<span class="ruby-constant">GlobalAlloc</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">width</span>*<span class="ruby-identifier">height</span>*<span class="ruby-value">4</span>)
+  <span class="ruby-identifier">lpBitmap</span> = <span class="ruby-constant">KERNEL32</span>.<span class="ruby-constant">GlobalLock</span>(<span class="ruby-identifier">hDIB</span>)
+  <span class="ruby-identifier">bi</span>       = [<span class="ruby-value">40</span>, <span class="ruby-identifier">width</span>, <span class="ruby-identifier">height</span>, <span class="ruby-value">1</span>, <span class="ruby-value">32</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">width</span>*<span class="ruby-identifier">height</span>*<span class="ruby-value">4</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">&quot;L*&quot;</span>)
+
+  <span class="ruby-constant">GDI32</span>.<span class="ruby-constant">GetDIBits</span>(<span class="ruby-ivar">@hdc</span>, <span class="ruby-ivar">@hbitmap</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">height</span>, <span class="ruby-identifier">lpBitmap</span>,  <span class="ruby-identifier">bi</span>,  <span class="ruby-value">0</span>)
+  <span class="ruby-constant">Seiran20</span>.<span class="ruby-identifier">writemem</span>(<span class="ruby-identifier">addr</span>, <span class="ruby-identifier">width</span>*<span class="ruby-identifier">height</span>*<span class="ruby-value">4</span>, <span class="ruby-identifier">hDIB</span>)
+  <span class="ruby-constant">KERNEL32</span>.<span class="ruby-constant">GlobalUnlock</span>(<span class="ruby-identifier">hDIB</span>)
+  <span class="ruby-constant">KERNEL32</span>.<span class="ruby-constant">GlobalFree</span>(<span class="ruby-identifier">hDIB</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- save_to_bitmap-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- save_to_bitmap-method -->
+
+      
+        <div id="scene-method" class="method-detail ">
+          <a name="method-c-scene"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">scene</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="scene-source">
+<pre>
+<span class="ruby-comment"># File opengl.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">scene</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;OpenGL.scene&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-value">0</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">self</span>[<span class="ruby-value">:wglMakeCurrent</span>].<span class="ruby-identifier">call</span>(<span class="ruby-ivar">@hdc</span>, <span class="ruby-ivar">@hrc</span>)
+  <span class="ruby-keyword">yield</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+  <span class="ruby-constant">OpenGL</span><span class="ruby-operator">::</span><span class="ruby-constant">GDI32</span>.<span class="ruby-constant">SwapBuffers</span>()
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- scene-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- scene-method -->
+
+      
+        <div id="setcurrent-method" class="method-detail ">
+          <a name="method-c-setcurrent"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">setcurrent</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="setcurrent-source">
+<pre>
+<span class="ruby-comment"># File opengl.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">setcurrent</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;OpenGL.scene&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-value">0</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">self</span>[<span class="ruby-value">:wglMakeCurrent</span>].<span class="ruby-identifier">call</span>(<span class="ruby-ivar">@hdc</span>, <span class="ruby-ivar">@hrc</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- setcurrent-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- setcurrent-method -->
+
+      
+        <div id="translate-method" class="method-detail ">
+          <a name="method-c-translate"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">translate</span><span
+              class="method-args">(text, neg = false)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="translate-source">
+<pre>
+<span class="ruby-comment"># File opengl.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">translate</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">neg</span> = <span class="ruby-keyword">false</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">text</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/([\d\.]+)f?/</span> 
+     <span class="ruby-identifier">k</span> = <span class="ruby-node">$1</span>
+     <span class="ruby-keyword">if</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">index</span>(<span class="ruby-string">&quot;.&quot;</span>)
+        <span class="ruby-keyword">return</span> [<span class="ruby-identifier">neg</span> <span class="ruby-operator">?</span> <span class="ruby-operator">-</span><span class="ruby-constant">Float</span>(<span class="ruby-identifier">k</span>) <span class="ruby-operator">:</span> <span class="ruby-constant">Float</span>(<span class="ruby-identifier">k</span>)].<span class="ruby-identifier">pack</span>(<span class="ruby-string">&quot;F&quot;</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-string">&quot;l&quot;</span>).<span class="ruby-identifier">first</span> 
+     <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">text</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- translate-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- translate-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

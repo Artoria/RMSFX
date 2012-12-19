@@ -1,0 +1,5 @@
+$RGSS_SCRIPTS.each{|x| 
+  x[3].gsub!(/\$\(/){"dollar("}
+}
+
+
