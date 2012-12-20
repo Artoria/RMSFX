@@ -1,4 +1,5 @@
 require 's20'
+require 'ext'
 class Fixnum
   def to_dem
     [1, self].pack("LL")
@@ -24,6 +25,18 @@ class Array
   end
 end
 
+class UnknownObject
+  def initialize(ptr)
+    @ptr = ptr
+  end
+  def to_dem
+    @ptr
+  end
+  def inspect
+        sprintf("UnknownObject [%08x, %08x]", *@ptr.unpack("LL"))
+  end
+end
+
 class Object
   def self.from_dem(ptr)
     klass = ptr.unpack("l").first
@@ -33,7 +46,10 @@ class Object
        when 2
           ptr[4,4].unpack("F").first
        when 3
-          Seiran20.readstr ptr[4,4].unpack("L").first
+          Seiran20.to_mb(Seiran20.to_wc(Seiran20.readstr ptr[4,4].unpack("L").first),0).chomp("\0")
+       when 4
+          Seiran20.to_mb(Seiran20.readwstr ptr[4,4].unpack("L").first).chomp("\0")
+       
        else
          if klass < 0
             len = -klass * 8
@@ -41,7 +57,9 @@ class Object
             arr = []
             (len / 8).times{|z| arr.push Object.from_dem(x[z * 8, 8])}
             arr
-         end
+        else
+            UnknownObject.new(ptr)
+        end
        end
   end
 end
@@ -82,6 +100,10 @@ class DEM < ExternalWrapper
   def self.new(size)
       DEM[:dem_new].call size
   end
+  def self.pushptr(stack, dem)
+      DEM[:dem_push_ptr].call stack, dem
+  end
+
   def self.push(stack, tp, value)
       DEM[:dem_push_object].call stack, tp, value
   end
@@ -93,6 +115,11 @@ class DEM < ExternalWrapper
   def self.push_string(stack, x)
       DEM[:dem_push_object].call stack,3,x.to_ptr
   end
+
+  def self.push_wstring(stack, x)
+      DEM[:dem_push_object].call stack,4,x.to_ptr
+  end
+
 
   def self.push_name(stack, name)
       push_string stack, name

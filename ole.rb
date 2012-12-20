@@ -210,7 +210,7 @@ module RubyWood
       clsid = CLSIDHelper.fromStr(id.u2w)
       hr= OLE32.CoCreateInstance(clsid, 0, CLSCTX_ALL, IID_IDispatch, ppObjPtr)
       if hr!=0
-        msgbox ((hr + (1<<32) ) % (1<<32)).to_s(16)
+        p ((hr + (1<<32) ) % (1<<32)).to_s(16)
         return false
       end
       init_table
