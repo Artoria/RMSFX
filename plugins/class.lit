@@ -1,0 +1,33 @@
+﻿
+$RGSS_SCRIPTS.each_with_index{|x, i|
+  x[3].gsub!(/^(\s*)class\s+([^\s]+)\s*<\s*(.+)->\s*\n/) {
+   indent = $1
+   classname = $2
+   classes = $3   
+
+   ret = 
+"#{indent}
+#{indent}class #{classname} < ([#{classes}].select{|x| x.is_a?(Class)}[0] || Object); end
+#{indent}[#{classes}].each{|y|[#{classname}.send(:include, y), #{classname}.send(:extend, y)] if y.is_a?(Module) && !y.is_a?(Class)}
+#{indent}class #{classname} ->
+"
+  }
+}
+
+
+
+$RGSS_SCRIPTS.each_with_index{|x, i|
+  x[3].gsub!(/^(\s*)class\s+([^\s]+)\s*>\s*(.+)->\s*\n/) {
+   indent = $1
+   classname = $2
+   classes = $3   
+   ret = 
+"#{indent}
+#{indent}module #{classname}; end
+#{indent}[#{classes}].each{|y|[y.send(:include, #{classname}), y.send(:extend, #{classname})]}
+#{indent}module #{classname} ->
+"
+  }
+}
+
+

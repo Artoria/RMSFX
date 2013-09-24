@@ -1,0 +1,8 @@
+﻿$RGSS_SCRIPTS.each{|x| x[3] = x[3].gsub(/->([^\{]*?){/){"lambda{|#$1|"}.gsub(/\.\(/){".call(" }}
+
+class ::Symbol
+  def to_proc(obj, *args)
+    obj.send self, *args
+  end
+end
+

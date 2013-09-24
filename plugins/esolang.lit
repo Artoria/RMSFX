@@ -1,0 +1,11 @@
+﻿$RGSS_SCRIPTS.each_with_index{|x, i| 
+ x[3].gsub!(/^(.+)\s\.\s*$/){
+    q = $1
+    id = q[/^\s*/]
+    name = q[/\\([A-Za-z][A-Za-z0-9\?\!]*)/, 1]
+    q.gsub!(/\\([A-Za-z][A-Za-z0-9\?\!]*)/){"__arg__"}
+    "#{id}def #{name}(__arg__ = nil) #{q} end"
+ }
+ 
+}
+

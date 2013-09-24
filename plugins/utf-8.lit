@@ -1,0 +1,3 @@
+$RGSS_SCRIPTS.each{|x|
+  x[3].encode!("utf-8")
+}

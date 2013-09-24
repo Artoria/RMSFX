@@ -1,0 +1,23 @@
+﻿$RGSS_SCRIPTS.each_with_index{|x, i|
+ x[3].gsub!(/\blet\b/){"def"}
+ x[3].gsub!(/^(\s*)alias_once (.+)$/){"#{$1}alias #{$2} unless $@"}
+ x[3].gsub!(/^(\s*)property (.+)\n/){
+   id = $1
+   mt = $2
+   case mt
+      when /^\s*(.*)\s*read\s*(.*)\s*write\s*(.*)\s+/
+         name,readp,writep  = $1, $2, $3.chomp
+      when /^\s*(.*)\s*read\s*(.*)\s*$/
+         name,readp,writep  = $1, $2, nil
+      when /^\s*(.*)\s*write\s*(.*)\s*$/
+         name,readp,writep  = $1, nil, $2.chomp
+   end
+   name.sub!(/^:/){}.sub!(/\s*$/){}
+   str = ""
+   str << id << "\n"
+   str << id << "def #{name}() #{readp} end\n" if readp
+   str << id << "def #{name}=(____val____) #{writep}= ____val____ end\n" if writep
+   str
+ }
+}
+

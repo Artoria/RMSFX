@@ -1,0 +1,12 @@
+﻿module DATA
+  def self.read(len = nil) 
+    $__data__.slice!(0, [len || $__data__.length, $__data__.length].min)
+  end
+  def self.rewind() $__data__ = $__dataobj__[__FILE__].to_s.dup  end
+end
+ 
+$__dataobj__ = {}
+$RGSS_SCRIPTS.each_with_index{|x, i|
+  $__dataobj__[sprintf("Section%03d", i-1)] = (x[3] = "DATA.rewind\n#{x[3]}")[/__END__[\r\s]*\n([\w\W]+)$/u, 1]
+}
+
