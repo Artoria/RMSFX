@@ -5,16 +5,22 @@ module SD
         Graphics.update
         Input.update
         super
+<<<<<<< HEAD
+
 	update_cursor
     end
 
 
+=======
+    end
+>>>>>>> master/master
     
     attr_accessor :showing
     def pass
         update
         onkey :C if Input.trigger? Input::C
         onkey :B if Input.trigger? Input::B 
+<<<<<<< HEAD
 
 
     end
@@ -28,6 +34,8 @@ module SD
 		@cursor_sprite_dx =  12
 	end
 	@cursor_sprite.opacity += @cursor_sprite_dx
+=======
+>>>>>>> master/master
     end
 
     def show_modal
@@ -46,7 +54,7 @@ module SD
         self
     end
 
-
+<<<<<<< HEAD
     def initialize *a
       super *a
       self.parent = SD::GameScreen.all
@@ -70,6 +78,16 @@ module SD
     #rect
     def rect
         SD::Rect.new(self.x, self.y, self.bitmap.width, self.bitmap.height)
+=======
+
+    def initialize *a
+      super *a
+      self.parent = Parent.screen
+    end
+
+    def rect
+        Rect.new(self.x, self.y, self.bitmap.width, self.bitmap.height)
+>>>>>>> master/master
     end
 
     include Mixin::Position
@@ -78,6 +96,7 @@ module SD
     include Mixin::Text
     include Mixin::SimpleControl
     include Mixin::Transition
+<<<<<<< HEAD
 
     def oninitbitmap bitmap
 	x = @cursor_sprite.bitmap
@@ -89,5 +108,7 @@ module SD
 	@cursor_sprite.dispose
 	super
     end
+=======
+>>>>>>> master/master
   end
 end

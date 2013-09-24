@@ -12,6 +12,7 @@ module SD
            self
       end
 
+<<<<<<< HEAD
       def top! ratio = 0
            self.y = parent.rect.y + parent.height * ratio
            self
@@ -29,7 +30,26 @@ module SD
 
       def right! ratio = 0
            self.x = parent.rect.width  - rect.width - parent.rect.width * ratio
-self
+=======
+      def top!
+           self.y = parent.rect.y
+           self
+      end
+
+      def left!
+           self.x = parent.rect.x
+           self
+      end
+
+      def bottom!
+           self.y = parent.rect.height - rect.height
+           self
+      end
+
+      def right!
+           self.x = parent.rect.width  - rect.width
+>>>>>>> master/master
+           self
       end
 
       def center!
@@ -56,6 +76,7 @@ self
       def special_rect pos, myrect
         case pos
           when 1..9
+<<<<<<< HEAD
             rect = SD::Rect.new myrect.x, myrect.y, myrect.width, myrect.height
             rect.parent = self
             rect.dock pos
@@ -92,4 +113,15 @@ self
     end
   end
 end
+=======
+            rect = SD::Parent.new myrect.x, myrect.y, myrect.width, myrect.height
+            rect.parent = self
+            rect.dock pos
+            rect
+        end
+      end
 
+    end
+  end
+end
+>>>>>>> master/master

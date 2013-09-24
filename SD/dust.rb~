@@ -83,14 +83,12 @@ module SD
 				case align
 				when 0
 					bitmap.stretch_blt(rect.original_rect,bmp,srect)#名字和参数都忘了……
-					rect
 				when 1..9
 					x = ss.dup
 					x.pin align, rect, align
 					bitmap.blt(x.x, x.y, bmp, srect)
-					Rect.new(x.x, x.y, srect.width, srect.height)
 				end
-
+				Rect.new(x.x, x.y, srect.width, srect.height)
 			end
 			def self.align(content)
 				if content.is_a?(Hash)

@@ -7,8 +7,11 @@ module SD
         self.opacity = 0
         while frame > 0
           w += per
-
+<<<<<<< HEAD
           self.opacity = w.to_i
+=======
+          self.opacity = w
+>>>>>>> master/master
           update
           frame -= 1
         end
@@ -19,12 +22,17 @@ module SD
         w   = self.opacity.to_f
         while frame > 0
           w -= per
+<<<<<<< HEAD
           self.opacity = w.to_i
+=======
+          self.opacity = w
+>>>>>>> master/master
           update
           frame -= 1
         end
         dispose 
       end
+<<<<<<< HEAD
 
       def push_bitmap
 	      @bitmaps ||= []
@@ -70,4 +78,9 @@ module SD
     end
   end
 end
-
+=======
+ 
+    end
+  end
+end
+>>>>>>> master/master
