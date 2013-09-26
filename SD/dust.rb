@@ -1,23 +1,28 @@
 module SD
 	class Dust
-		attr_accessor :content, :content_type, :id, :rect
-		def initialize(content, content_type)
+		attr_accessor :content, :content_type, :id, :rect, :redraw_block
+		def initialize(content, content_type, &block)
 			self.content      = content
 			self.content_type = content_type
+			self.redraw_block = block || lambda{true}
 		end
 		def draw(rect)
-			self.rect = self.content_type.draw(rect, self)
+			redraw = self.redraw_block.call
+			if redraw != @redraw
+				self.rect = self.content_type.draw(rect, self)
+				@redraw = redraw
+			end
 		end
 		def size(rect = nil)
-			SD::Rect.new self.content_type.size(rect, content)
+			SD::Rect.new self.content_type.size(rect, self)
 		end
 		def context
 			SD::Context.current
 		end
 
 		module Text
-			def self.size(rect, content)
-				SD::Context.current.bitmap.text_size content
+			def self.size(rect, dust)
+				SD::Context.current.bitmap.text_size dust.content
 			end
 			def self.draw(rect, dust)
 				SD::Context.current.bitmap.draw_text rect.original_rect, dust.content
@@ -25,26 +30,36 @@ module SD
 			end
 		end
 		module ShadowedText
-			def self.size(rect,content)
+			def self.size(rect,dust)
+				return SD::Rect.empty if dust.content[:absolute]
 				rect=::Rect.new(0,0,rect.width,rect.height)
 				bmp=Bitmap.new(1,1)
-				srect=bmp.text_size(to_ss(content))
+				srect=bmp.text_size(to_ss(dust.content))
 				#if SD::Context.current.shadow
 				srect.width+=1
 				srect.height+=1
 				#end
 				bmp.dispose
-				::Rect.new(x=[rect.x,srect.x].max,y=[rect.y,srect.y].max,[rect.width,srect.width].min-x,[rect.height,srect.height].min-y)
+				Rect.new(x=[rect.x,srect.x].max,y=[rect.y,srect.y].max,[rect.width,srect.width].min-x,[rect.height,srect.height].min-y)
 			end
 			def self.draw(rect,dust)
-				bmp=Bitmap.new( (srect=self.size(rect,str=to_ss(dust.content))).width,srect.height )
+				bmp=Bitmap.new( (srect=self.size(rect, dust)).width,srect.height )
+				if dust.content[:absolute]
+					srect = dust.content[:absolute]
+				end
 				bmp.font=(bitmap= SD::Context.current.bitmap ).font
-				bmp.draw_text(srect,str)
+				bmp.draw_text(srect,to_ss(dust.content))
 				x=(align=self.align(dust.content))==0 ? rect.x : align==2 ? rect.x+rect.width-srect.width : rect.x+(rect.width-srect.width)/2
 				y= rect.y+(rect.height-srect.height)/2 
+				if dust.content[:absolute]
+					x,y=dust.content[:absolute].x,dust.content[:absolute].y
+				end
+
 				bitmap.blt(x,y,bmp,srect)
 				bmp.dispose
+
 				srect
+
 			end
 			def self.align(content)
 				if content.is_a?(Hash)
@@ -68,26 +83,39 @@ module SD
 			end
 		end
 		module Picture
-			def self.size(rect,content)
-				bmp=get_bmp(content)
+			def self.size(rect,dust)
+				return SD::Rect.empty if dust.content[:absolute]
+				bmp=Bitmap.new get_bmp(dust.content)
 				srect=bmp.rect
 				rect=Rect.new(0,0,rect.width,rect.height)
+				bmp.dispose
 				Rect.new(x=[rect.x,srect.x].max,y=[rect.y,srect.y].max,[rect.width,srect.width].min-x,[rect.height,srect.height].min-y) 
+
 			end
 			def self.draw(rect,dust)
-				bmp=get_bmp(dust.content)
+				bmp=Bitmap.new get_bmp(dust.content)
 				align=align(dust.content)
-				srect=(ss=self.size(rect,dust.content)).original_rect
-
+				srect=(ss=self.size(rect,dust)).original_rect
+				
 				bitmap=SD::Context.current.bitmap
 				case align
 				when 0
+					srect = dust.content[:absolute].size.original_rect if dust.content[:absolute]
+					rect = dust.content[:absolute] if dust.content[:absolute]
 					bitmap.stretch_blt(rect.original_rect,bmp,srect)#名字和参数都忘了……
+					bmp.dispose
 					rect
 				when 1..9
-					x = ss.dup
-					x.pin align, rect, align
+
+					if dust.content[:absolute]
+						srect = dust.content[:absolute].size.original_rect
+						x = dust.content[:absolute].dup 
+					else
+						x = ss.dup
+						x.pin align, rect, align
+					end
 					bitmap.blt(x.x, x.y, bmp, srect)
+					bmp.dispose
 					Rect.new(x.x, x.y, srect.width, srect.height)
 				end
 
@@ -103,7 +131,7 @@ module SD
 				5
 			end 
 			def self.get_bmp(content)
-				Bitmap.new content[:src]
+				content[:src]
 			end
 		end
 

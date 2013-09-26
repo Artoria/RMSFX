@@ -25,6 +25,15 @@ module SD
       ::Rect.new(x, y, width, height)
     end
 
+    def dup
+      self.class.new self
+    end
+
+    def size
+      self.class.new 0, 0, width, height
+    end
+    alias clone dup
+
     include SD::Mixin::Position
   end
 end

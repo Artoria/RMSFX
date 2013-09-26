@@ -8,3 +8,6 @@ def sdsprite(bmp, &b)
   s.instance_eval &b if b
 end
 
+def sdcurrent
+	SD::Context.current
+end

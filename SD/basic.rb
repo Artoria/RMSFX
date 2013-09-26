@@ -23,9 +23,9 @@ module SD
         @cursor_sprite.x, @cursor_sprite.y = self.x, self.y
 	@cursor_sprite.update
 	if @cursor_sprite.opacity  == 255
-		@cursor_sprite_dx = -12
-	elsif @cursor_sprite.opacity  == 0
-		@cursor_sprite_dx =  12
+		@cursor_sprite_dx = -6
+	elsif @cursor_sprite.opacity  <= 128
+		@cursor_sprite_dx =  6
 	end
 	@cursor_sprite.opacity += @cursor_sprite_dx
     end
