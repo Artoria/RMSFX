@@ -1,8 +1,6 @@
 $: .unshift "C:/RMSFX"
 ENV['path'] = "C:/RMSFX/bin;"+ENV['path']
 
-require 's20'
-require 'ver'
 
 class Object
   def require *a
@@ -10,6 +8,8 @@ class Object
   end
 end unless respond_to?(:require)
 
+require 's20'
+require 'ver'
 
 module RMSFX
   extend self
