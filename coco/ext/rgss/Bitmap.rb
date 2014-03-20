@@ -133,7 +133,7 @@ class Bitmap
                 int32 left, top, right, bottom;
         end
         def self.fromHWND(hwnd, width = -1, height = -1)
-                hdc = USER32.GetWindowDC(hwnd)
+                hdc = USER32.GetDC(hwnd)
                 rect = RECT.new
                 if width == -1
                         USER32.GetClientRect(hwnd, rect)

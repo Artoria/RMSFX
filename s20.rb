@@ -104,10 +104,10 @@ module Seiran20
      rb_funcall       = findcall(text, handle, 'Marshal', 'dump', 1),
     ]
   end
-  
-  RGSSX = rgssx_increment unless constants.include?(:RGSSX)
-  ID_CALL = callproc(RGSSX[1]).call "call"
-  
+  if ID_RGSS != '' and !$NO_RGSSX
+     RGSSX = rgssx_increment unless constants.include?(:RGSSX)
+     ID_CALL = callproc(RGSSX[1]).call "call"
+  end
   class Internal_Callback
     attr_accessor :block, :code
     def to_int() code.to_ptr end
@@ -288,7 +288,7 @@ module Seiran20
           msg , r, pm, ac = "\0"*24, 0, api('user32', 'PeekMessage'), api('user32', 'GetAncestor')
           loop do
             return r if pm.call(msg, 0, 0, 0, 0) != 0 and ((r = ac.call(msg.unpack('L').first, 3))!=0)
-            Graphics.update
+            ::Graphics.update if defined?(::Graphics)
          end
      end
     
