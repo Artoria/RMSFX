@@ -20,7 +20,7 @@ module RGSSInline
         
           ex = Metasm::Expression[v.target]
           r = ex.reduce{|a|
-            (u.encoded.export[a] || (Seiran20.funcaddr('user32', a) - base)) + base
+            (u.encoded.export[a] || (Seiran20.funcaddr('user32', a) - base) || (Seiran20.funcaddr('msvcrt', a) - base)) + base
           }
           Seiran20.writemem(base + k, 4, [r].pack("L"))
         }
